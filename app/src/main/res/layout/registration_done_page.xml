@@ -9,7 +9,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:id="@+id/finishlayout"
-    tools:context=".DonePage">
+    tools:context=".RegistrationDone">
 
     <TextView
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/checkmark"
         android:textSize="20dp"
-        android:text="You can now use Telegram for your transactions"
+        android:text="You can now start using CIMB Lor"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"

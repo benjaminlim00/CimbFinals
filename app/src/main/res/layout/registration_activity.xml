@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:id="@+id/regheader"
-        android:background="@drawable/regheader" />
+        android:background="@drawable/regheaderfirst" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -56,18 +56,18 @@
         android:layout_height="43dp"
         android:layout_below="@+id/regheader"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="400dp"
         android:background="@drawable/regbutton" />
 
     <Button
-        android:id="@+id/exitButton"
+        android:id="@+id/backButton"
         android:layout_width="134dp"
         android:layout_height="42dp"
         android:layout_below="@+id/regheader"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="299dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="0dp"
-        android:background="@drawable/exitbutton"
+        android:background="@drawable/backbutton"
         android:nextFocusLeft="@id/regButton"
         android:text="Back"
         android:textColor="@android:color/white"

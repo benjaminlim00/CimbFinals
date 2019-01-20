@@ -6,15 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_alignParentBottom="true"
-    tools:context=".RegisterGesture">
+    tools:context=".QrScanner">
     
-    <com.example.benjamin.cimbgestures.CanvasView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/linearLay"
-        android:layout_below="@id/reggestureheader"
-        android:id="@+id/canvas"/>
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -22,16 +16,31 @@
         android:id="@+id/reggestureheader"
         android:background="@drawable/regheader" />
 
-    <ImageView
-        android:id="@+id/reggesturetext"
-        android:layout_width="221dp"
+
+
+    <TextView
+        android:layout_width="350dp"
         android:layout_height="55dp"
+        android:id="@+id/reggesturetext"
         android:layout_below="@+id/reggestureheader"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:background="@drawable/reggesturetext" />
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:text="Please scan the QR code"
+        />
 
 
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/linearLay"
+        android:text="result shown here"
+        android:textSize="0dp"
+        android:layout_marginBottom="20dp"/>
 
 
     <LinearLayout
@@ -46,15 +55,12 @@
 
 
         <Button
-            android:id="@+id/confirmButton"
-            android:background="@drawable/regbutton"
-            android:text="Confirm"
+            android:id="@+id/button_scan"
+            android:background="@drawable/scan"
+            android:text="Scan"
             android:textColor="#FFFFFF"
-            android:onClick="clearCanvas"
 
-
-
-            android:layout_width="0dp"
+            android:layout_width="50dp"
             android:layout_weight="0.5"
             android:layout_alignParentTop="false"
             android:layout_height="45dp"
@@ -64,10 +70,9 @@
         />
 
         <Button
-            android:id="@+id/clearButton"
-            android:background = "@drawable/exitbutton"
-            android:onClick="clearCanvas"
-            android:text="Clear"
+            android:id="@+id/nextButton"
+            android:background = "@drawable/nextbutton"
+            android:text="Next"
             android:textColor="#FFFFFF"
 
 
@@ -76,7 +81,7 @@
             android:layout_alignParentTop="false"
             android:layout_height="45dp"
             android:layout_margin="10dp"
-        />
+            />
 
 
     </LinearLayout>
